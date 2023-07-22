@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./bookmark.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="book.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body>
+    <div class="book py-3">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="py-2 position-relative">Bookmarker</h1>
+            <div class="marker w-100 p-3 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <div class="book w-100 p-3 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2>
+                  <i class="fa-solid fa-bookmark"></i>
+                  Bookmark your favorite sites
+                  <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                  <div class="sitename w-100 ">
+                  <label for="bookmarkName" class="pb-2">
+                    <i class="fa-book-bookmark pe-2"></i>Site Name</label>
+                  <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName"/>
+                </div>
+                <div class="siteurl w-100 ">
+                  <label for="bookmarkURL" class="pb-2 ">
+                    <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                  <input type="url" placeholder="Website URL" class="form-control" id="WebsiteURL"/>
+                </div>
+                <button class="btn btn-submit px-5" id="submitBtn">Submit</button>
+                <div class="mark w-100 p-3 d-flex flex-column justify-content-center align-items-center"></div>
+                <table class="table mt-3 text-center bg-light">
+                    <thead>
+                      <th>index</th>
+                      <th>Website Name</th>
+                      <th>Visit</th>
+                      <th>Delete</th>
+                    </thead>
+                    <tbody id="table"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="react.js"></script>
+</body>
+</html>
